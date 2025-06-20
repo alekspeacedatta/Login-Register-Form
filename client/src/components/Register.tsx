@@ -16,7 +16,7 @@ const Register = () => {
         });
     
         if (res.ok) {
-          navigate('/registered');
+          navigate('/registered', {state: {email, password}});
         } else {
           alert('Registration failed');
         }

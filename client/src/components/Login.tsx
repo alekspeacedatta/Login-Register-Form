@@ -16,7 +16,7 @@ const Login = () => {
     });
 
     if (res.ok) {
-      navigate('/logined');
+      navigate('/logined', { state: { email } });
     } else {
       alert('Login failed');
     }

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom"
-import Login from "./Login"
+import { useLocation } from 'react-router-dom';
+
 const Logined = () => {
-  const { email, password } = Login;
+  const location = useLocation();
+  const email = location.state?.email;
   return (
     <>
-      <div>Welcome back bro</div>
+      <div>Welcome back {email} bro</div>
       <div>
         <Link to='/'>Back To Home</Link>
       </div>
