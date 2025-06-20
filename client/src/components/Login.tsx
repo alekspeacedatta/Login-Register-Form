@@ -18,7 +18,7 @@ const Login = () => {
     if (res.ok) {
       navigate('/logined');
     } else {
-      alert('❌ Login failed');
+      alert('Login failed');
     }
   };
   return (

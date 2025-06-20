@@ -18,7 +18,7 @@ const Register = () => {
         if (res.ok) {
           navigate('/registered');
         } else {
-          alert('❌ Registration failed');
+          alert('Registration failed');
         }
       };
 
